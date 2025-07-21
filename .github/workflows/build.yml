@@ -1,12 +1,11 @@
-name: Java CI with Gradle
+name: Build LimboAuth
 
 on:
   push:
-    branches:
-      - master
+    branches: [ master ]
   pull_request:
-    branches:
-      - master
+    branches: [ master ]
+  workflow_dispatch:  # ← ADD THIS LINE TO ENABLE BUTTON
 
 jobs:
   build:
